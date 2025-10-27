@@ -10,6 +10,13 @@ import Register from "./pages/auth/Register";
 import ResetPassword from "./pages/auth/ResetPassword";
 import Monitoring from "./pages/Monitoring";
 import Alerts from "./pages/Alerts";
+import Applications from "./pages/Applications";
+import ApplicationDetail from "./pages/ApplicationDetail";
+import Reports from "./pages/Reports";
+import Settings from "./pages/Settings";
+import Profile from "./pages/Profile";
+import Help from "./pages/Help";
+import Offline from "./pages/Offline";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,6 +32,13 @@ const App = () => (
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/monitoring" element={<Monitoring />} />
           <Route path="/alerts" element={<Alerts />} />
+          <Route path="/applications" element={<Applications />} />
+          <Route path="/applications/:id" element={<ApplicationDetail />} />
+          <Route path="/reports" element={<Reports />} />
+          <Route path="/settings" element={<Settings />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/help" element={<Help />} />
+          <Route path="/offline" element={<Offline />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/reset-password" element={<ResetPassword />} />
